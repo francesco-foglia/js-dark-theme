@@ -4,6 +4,10 @@ main {
   display: flex;
 }
 
+i {
+  font-size: 2rem;
+}
+
 img {
   width: 200px;
   margin: auto;

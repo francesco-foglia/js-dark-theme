@@ -5,7 +5,8 @@ let html = document.getElementsByTagName("html")[0];
 html.style.filter = (light) ? html.style.filter = "none" : html.style.filter = "invert(1)";
 
 let button = document.getElementById("dark-theme");
-button.innerHTML = (light) ? button.innerHTML = "Activate the dark theme" : button.innerHTML = "Activate the light theme";
+// button.innerHTML = (light) ? button.innerHTML = "Activate the dark theme" : button.innerHTML = "Activate the light theme";
+button.innerHTML = (light) ? button.innerHTML = "<i class=\"fas fa-moon\"></i>" : button.innerHTML = "<i class=\"fas fa-sun\"></i>";
 
 let img = document.querySelectorAll("img");
 img.forEach(
@@ -18,7 +19,8 @@ img.forEach(
 function changeTheme() {
 
   html.style.filter = (html.style.filter == "none") ? "invert(1)" : "none";
-  button.innerHTML = (button.innerHTML == "Activate the dark theme") ? "Activate the light theme" : "Activate the dark theme";
+  // button.innerHTML = (button.innerHTML == "Activate the dark theme") ? "Activate the light theme" : "Activate the dark theme";
+  button.innerHTML = (button.innerHTML == "<i class=\"fas fa-moon\"></i>") ? "<i class=\"fas fa-sun\"></i>" : "<i class=\"fas fa-moon\"></i>";
 
   img.forEach(
     (img) => {
